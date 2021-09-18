@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_catalog/screens/homepage.dart';
+import 'package:flutter_catalog/screens/loginpage.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -7,17 +10,20 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Material(
-        child: Center(
-          child: Container(
-            child: Text("App"),
-          ),
-        ),
+      debugShowCheckedModeBanner: false,
+      themeMode: ThemeMode.light,
+      theme: ThemeData(
+        fontFamily: GoogleFonts.lato().fontFamily,
       ),
+      darkTheme: ThemeData(brightness: Brightness.dark),
+      // initialRoute: "/home",
+      routes: {
+        "/": (context) => LoginPage(),
+        "/home": (context) => HomePage(),
+      },
     );
   }
 }
