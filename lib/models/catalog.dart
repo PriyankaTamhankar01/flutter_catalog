@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 class CatalogModel {
+  
   static List<Item> items;
 
   // Get Item by ID
@@ -20,7 +21,7 @@ class Item {
   final String image;
 
   Item({
-    this.id,
+    required this.id,
     this.name,
     this.desc,
     this.price,

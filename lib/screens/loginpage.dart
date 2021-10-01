@@ -36,7 +36,7 @@ class _LoginPageState extends State<LoginPage> {
             child: Column(
               children: [
                 Image.asset(
-                  "assets/images/hey.png",
+                  "assets/images/welcome.png",
                   fit: BoxFit.cover,
                 ),
                 SizedBox(
@@ -61,6 +61,9 @@ class _LoginPageState extends State<LoginPage> {
                         decoration: InputDecoration(
                           hintText: "Enter username",
                           labelText: "Username",
+                          border: new OutlineInputBorder(
+                            borderRadius: new BorderRadius.circular(12.0),
+                          ),
                         ),
                         validator: (value) {
                           if (value.isEmpty) {
@@ -79,6 +82,9 @@ class _LoginPageState extends State<LoginPage> {
                         decoration: InputDecoration(
                           hintText: "Enter password",
                           labelText: "Password",
+                          border: new OutlineInputBorder(
+                            borderRadius: new BorderRadius.circular(12.0),
+                          ),
                         ),
                         validator: (value) {
                           if (value.isEmpty) {

@@ -30,7 +30,7 @@ class CatalogList extends StatelessWidget {
 class CatalogItem extends StatelessWidget {
   final Item catalog;
 
-  const CatalogItem({required Key key, @required this.catalog})
+  const CatalogItem({Key key, @required this.catalog})
       : assert(catalog != null),
         super(key: key);
 
@@ -51,7 +51,7 @@ class CatalogItem extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               catalog.name.text.lg.color(context.accentColor).bold.make(),
-              catalog.desc.text.textStyle(context.captionStyle).make(),
+              catalog.desc.text.make(),
               10.heightBox,
               ButtonBar(
                 alignment: MainAxisAlignment.spaceBetween,

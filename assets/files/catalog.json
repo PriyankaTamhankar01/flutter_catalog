@@ -58,11 +58,27 @@
         },
         {
             "id": 8,
+            "name": "OPPO R15 Pro",
+            "desc": "Oppo R15 Dream Mirror Edition ",
+            "price": 199,
+            "color": "#1c1c1c",
+            "image": "https://www.telstra.com.au/content/dam/tcom/personal/mobile-phones/product-catalogue/oppo-r15-pro/oppo-r15-device-front.png"
+        },
+        {
+            "id": 9,
             "name": "Galaxy S21",
             "desc": "Samsung Galaxy S21 2021 edition",
             "price": 899,
             "color": "#7c95eb",
             "image": "https://images.samsung.com/is/image/samsung/p6pim/za/galaxy-s21/gallery/za-clear-cover-galaxy-s21-5g-ef-qg991ttegww-363168624?$720_576_PNG$"
+        },
+        {
+            "id": 10,
+            "name": "Sony Xperia XA2",
+            "desc": "Sony Xperia",
+            "price": 899,
+            "color": "#7c95eb",
+            "image": "https://www.telstra.com.au/content/dam/tcom/personal/mobile-phones/product-catalogue/sony-xperia-xa2/sony_xperia_xa2_front_v1.png"
         }
     ]
 }
